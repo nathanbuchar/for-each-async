@@ -12,7 +12,7 @@ Asynchronous `Array.forEach`. The [`forEach()`][external_mdn_foreach] method exe
 ### Installation
 
 ```bash
-$ npm install foreach-async
+$ npm install for-each-async
 ```
 
 
