@@ -1,6 +1,6 @@
 {
   "name": "for-each-async",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Asynchronous Array.forEach",
   "main": "for-each-async.js",
   "directories": {
