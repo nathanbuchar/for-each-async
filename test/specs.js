@@ -4,7 +4,7 @@
 
 const chai = require('chai');
 
-const forEachAsync = require('../foreach-async');
+const forEachAsync = require('../for-each-async');
 
 const expect = chai.expect;
 const should = chai.should();

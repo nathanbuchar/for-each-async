@@ -94,7 +94,7 @@ gulp.task('jscs', () => {
  * @see {@link http://npmjs.org/package/gulp-babel}
  */
 gulp.task('scripts', () => {
-  return gulp.src('src/foreach-async.js')
+  return gulp.src('src/for-each-async.js')
     .pipe(plumber({
       errorHandler: onError
     }))
@@ -113,12 +113,12 @@ gulp.task('scripts', () => {
  * @see {@link http://npmjs.org/package/gulp-rename}
  */
 gulp.task('uglify', () => {
-  return gulp.src('./foreach-async.js')
+  return gulp.src('./for-each-async.js')
     .pipe(plumber({
       errorHandler: onError
     }))
     .pipe(uglify())
-    .pipe(rename('foreach-async.min.js'))
+    .pipe(rename('for-each-async.min.js'))
     .pipe(gulp.dest('.'));
 });
 

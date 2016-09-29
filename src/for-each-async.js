@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function reduceAsync(arr, iteratee, done /*, thisArg*/) {
+module.exports = function forEachAsync(arr, iteratee, done /*, thisArg*/) {
 
   /**
    * Validate that the first parameter is an array.
@@ -9,7 +9,7 @@ module.exports = function reduceAsync(arr, iteratee, done /*, thisArg*/) {
    */
   if (!Array.isArray(arr)) {
     throw new TypeError(
-      'Async reduce must be called on an array. Got "' + typeof array + '".');
+      'Async forEach must be called on an array. Got "' + typeof array + '".');
   }
 
   /**
@@ -33,7 +33,7 @@ module.exports = function reduceAsync(arr, iteratee, done /*, thisArg*/) {
   }
 
   /**
-   * The reduceAsync arguments.
+   * The forEachAsync arguments.
    *
    * @type {Array}
    * @private
@@ -41,7 +41,7 @@ module.exports = function reduceAsync(arr, iteratee, done /*, thisArg*/) {
   let _args = arguments;
 
   /**
-   * The array to reduce.
+   * The array to iterate through.
    *
    * @type {Array}
    * @private

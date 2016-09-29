@@ -1,4 +1,4 @@
-ForEachAsync [![Build Status](https://travis-ci.org/nathanbuchar/foreach-async.svg?branch=master)](https://travis-ci.org/nathanbuchar/foreach-async)
+ForEachAsync [![Build Status](https://travis-ci.org/nathanbuchar/for-each-async.svg?branch=master)](https://travis-ci.org/nathanbuchar/for-each-async)
 ===========
 
 Asynchronous `Array.forEach`. The [`forEach()`][external_mdn_foreach] method executes a provided function once per array element.
@@ -77,7 +77,7 @@ forEachAsync(array, iteratee, done[, thisArg])
   }
 
   Counter.prototype.add = function (array) {
-    forEach(array, function (val, n, arr, next) {
+    forEachAsync(array, function (val, n, arr, next) {
       this.sum += entry;
       ++this.count;
       next();

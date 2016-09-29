@@ -1,8 +1,8 @@
 {
-  "name": "foreach-async",
+  "name": "for-each-async",
   "version": "0.1.0",
   "description": "Asynchronous Array.forEach",
-  "main": "reduce-async.js",
+  "main": "for-each-async.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nathanbuchar/foreach-async.git"
+    "url": "https://github.com/nathanbuchar/for-each-async.git"
   },
   "engines": {
     "node": ">=4.0.0"
